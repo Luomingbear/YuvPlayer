@@ -65,7 +65,7 @@ const int bpp=12;
 int screen_w=500,screen_h=500;
 const int pixel_w=320,pixel_h=180;
 
-unsigned char buffer[pixel_w*pixel_h*bpp/8];
+unsigned char buffer[pixel_w * pixel_h * bpp/8];
 
 
 //Refresh Event
