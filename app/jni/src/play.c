@@ -41,18 +41,20 @@
 #endif
 
 #include <stdio.h>
+
+#include "SDL_config.h"
 #include "SDL_rect.h"
 
 #include "SDL_log.h"
 #include "SDL_main.h"
 #include "SDL.h"
+#include "SDL_events.h"
 
 const int bpp=12;
 
 int screen_w=500,screen_h=500;
 const int pixel_w=320,pixel_h=180;
-
-unsigned char buffer[pixel_w * pixel_h * bpp/8];
+int   buf_num;
 
 
 //Refresh Event
@@ -81,6 +83,8 @@ int refresh_video(void *opaque){
 
 int main(int argc, char* argv[])
 {
+
+
 	if(SDL_Init(SDL_INIT_VIDEO)) {  
 		printf( "Could not initialize SDL - %s\n", SDL_GetError()); 
 		return -1;
@@ -116,6 +120,9 @@ int main(int argc, char* argv[])
 
 	SDL_Thread *refresh_thread = SDL_CreateThread(refresh_video,NULL,NULL);
 	SDL_Event event;
+
+	buf_num=pixel_w * pixel_h * bpp/8;
+	uint8_t buffer[buf_num];
 	while(1){
 		//Wait
 		SDL_WaitEvent(&event);
