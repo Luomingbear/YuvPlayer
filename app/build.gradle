@@ -12,7 +12,7 @@ android {
         versionName "1.0"
 
         sourceSets.main{
-            jni.srcDirs=[]//禁用自动ndk
+            //jni.srcDirs=[]//禁用自动ndk
             jniLibs.srcDir "libs"
         }
     }

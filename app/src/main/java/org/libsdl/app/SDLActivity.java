@@ -105,7 +105,7 @@ public class SDLActivity extends Activity {
         ViewGroup.LayoutParams lp;
         lp=mSurface.getLayoutParams();
         lp.width=1080;
-        lp.height=500;
+        lp.height=550;
         mSurface.setLayoutParams(lp);
 
         setContentView(mLayout);

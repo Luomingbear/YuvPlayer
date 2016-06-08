@@ -52,7 +52,7 @@
 
 const int bpp=12;
 
-int screen_w=500,screen_h=500;
+int screen_w=1080,screen_h=550;
 const int pixel_w=320,pixel_h=180;
 int   buf_num;
 
