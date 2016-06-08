@@ -39,8 +39,9 @@ obj/local/armeabi/objs/SDL2/src/play.o: jni/src/play.c \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/asm/page.h \
  jni/include/SDL_error.h jni/include/SDL_pixels.h jni/include/SDL_rwops.h \
- jni/include/SDL_log.h jni/include/SDL_main.h jni/include/SDL.h \
- jni/include/SDL_main.h jni/include/SDL_assert.h \
+ jni/include/SDL_thread.h jni/include/SDL_atomic.h \
+ jni/include/SDL_mutex.h jni/include/SDL_log.h jni/include/SDL_main.h \
+ jni/include/SDL.h jni/include/SDL_main.h jni/include/SDL_assert.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/signal.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/asm/signal.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
@@ -49,19 +50,18 @@ obj/local/armeabi/objs/SDL2/src/play.o: jni/src/play.c \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/asm-generic/siginfo.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/sys/ucontext.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/sys/user.h \
- jni/include/SDL_atomic.h jni/include/SDL_audio.h \
- jni/include/SDL_endian.h \
+ jni/include/SDL_audio.h jni/include/SDL_endian.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
- jni/include/SDL_mutex.h jni/include/SDL_thread.h \
- jni/include/SDL_clipboard.h jni/include/SDL_cpuinfo.h \
- jni/include/SDL_events.h jni/include/SDL_video.h jni/include/SDL_rect.h \
- jni/include/SDL_surface.h jni/include/SDL_blendmode.h \
- jni/include/SDL_keyboard.h jni/include/SDL_keycode.h \
- jni/include/SDL_scancode.h jni/include/SDL_mouse.h \
- jni/include/SDL_joystick.h jni/include/SDL_gamecontroller.h \
- jni/include/SDL_quit.h jni/include/SDL_gesture.h jni/include/SDL_touch.h \
+ jni/include/SDL_thread.h jni/include/SDL_clipboard.h \
+ jni/include/SDL_cpuinfo.h jni/include/SDL_events.h \
+ jni/include/SDL_video.h jni/include/SDL_rect.h jni/include/SDL_surface.h \
+ jni/include/SDL_blendmode.h jni/include/SDL_keyboard.h \
+ jni/include/SDL_keycode.h jni/include/SDL_scancode.h \
+ jni/include/SDL_mouse.h jni/include/SDL_joystick.h \
+ jni/include/SDL_gamecontroller.h jni/include/SDL_quit.h \
+ jni/include/SDL_gesture.h jni/include/SDL_touch.h \
  jni/include/SDL_filesystem.h jni/include/SDL_haptic.h \
  jni/include/SDL_hints.h jni/include/SDL_loadso.h jni/include/SDL_log.h \
  jni/include/SDL_messagebox.h jni/include/SDL_power.h \
@@ -161,6 +161,12 @@ jni/include/SDL_pixels.h:
 
 jni/include/SDL_rwops.h:
 
+jni/include/SDL_thread.h:
+
+jni/include/SDL_atomic.h:
+
+jni/include/SDL_mutex.h:
+
 jni/include/SDL_log.h:
 
 jni/include/SDL_main.h:
@@ -187,8 +193,6 @@ jni/include/SDL_assert.h:
 
 /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/sys/user.h:
 
-jni/include/SDL_atomic.h:
-
 jni/include/SDL_audio.h:
 
 jni/include/SDL_endian.h:
@@ -198,8 +202,6 @@ jni/include/SDL_endian.h:
 /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/sys/endian.h:
 
 /home/bear/android-ndk-r10e/platforms/android-9/arch-arm/usr/include/machine/endian.h:
-
-jni/include/SDL_mutex.h:
 
 jni/include/SDL_thread.h:
 

@@ -44,7 +44,7 @@
 
 #include "SDL_config.h"
 #include "SDL_rect.h"
-
+#include "SDL_thread.h"
 #include "SDL_log.h"
 #include "SDL_main.h"
 #include "SDL.h"
