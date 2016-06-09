@@ -38,26 +38,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_input"
-            android:hint="输入需要解码的视频地址→.yuv"
-            android:layout_below="@+id/button_ok"
+            android:hint="输入需要解码或者播放的视频地址"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_play"
-            android:hint="输入需要播放的yuv文件的地址"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="62dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="确定"
-            android:id="@+id/button_ok"
+            android:text="转码"
+            android:id="@+id/button_convert"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放"
+            android:id="@+id/button_play"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </RelativeLayout>
