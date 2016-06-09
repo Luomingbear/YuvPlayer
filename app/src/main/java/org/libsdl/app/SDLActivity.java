@@ -109,7 +109,7 @@ public class SDLActivity extends Activity {
         mSurface.setLayoutParams(lp);
 
         setContentView(mLayout);
-
+//
 //        mSurface = (SDLSurface)findViewById(R.id.sdlview);
 //
 //        setContentView(R.layout.activity_main);
